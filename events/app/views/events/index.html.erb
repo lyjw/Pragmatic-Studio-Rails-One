@@ -5,7 +5,9 @@
     <li>
       <strong><%= event.name %></strong>
       in <%= event.location %>: 
-      <%= number_to_currency(event.price) %>
+      <%= number_to_currency(event.price) %><br/>
+      <%= event.description %><br/>
+      <%= event.starts_at %>
     </li>
   <% end %>
 </ul>
