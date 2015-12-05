@@ -1,0 +1,10 @@
+<h1><%= @projects.size %> Projects</h1>
+
+<ul>
+  <% @projects.each do |project| %>
+    <li>
+      <strong><%= project.name %></strong>: <%= project.description %>
+      (<i>Target:</i> <%= number_to_currency(project.target_pledge_amount) %>)
+    </li>
+  <% end %>
+</ul>
